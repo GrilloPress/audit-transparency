@@ -1,0 +1,49 @@
+{% set title = 'Home' %}
+{% set navigation = 'transactional' %}
+{% from 'components/callout/macro.njk' import callout %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+<main id="main-content" class="nhsuk-home-page">
+    <div class="nhsuk-hero">
+        <div class="nhsuk-o-width-container">
+            <div class="nhsuk-o-main-wrapper nhsuk-hero-container">
+                <div class="nhsuk-o-grid">
+                    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                        <div class="nhsuk-page-heading">
+                            <h1>Audit and transparency</h1>
+                            <p>Prototypes, explorations and concepts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+
+                  <h2>End to end prototypes</h2>
+
+                  <h2>Service prototypes</h2>
+                  <ul>
+                      <li>Initial exploration - <a href="v1/start">17th October 2018</a></li>
+                  </ul>
+
+                  <h2>NHS website prototypes</h2>
+
+                    <div class="nhsuk-reading-width">
+                        <h2>Related stuff</h2>
+                        <ul>
+							              <li><a href="examples">National data opt-out</a></li>
+                            <li><a href="https://github.com/nhsuk/frontend.git">Public GitHub repository</a>.</p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

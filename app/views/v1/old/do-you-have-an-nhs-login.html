@@ -1,0 +1,63 @@
+{% set title = 'Find out where your health record has been used' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+{% set navigation = 'transactional-at' %}
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a service — your <a href="#">feedback</a> will help us to improve it.') }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend">
+      <h1 class="nhsuk-c-transaction-head">
+        Do you have an NHS login?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="nhs-login-1" name="nhs-login" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="nhs-login-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="nhs-login-2" name="nhs-login" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="nhs-login-2">
+          No, I'll need to create one
+        </label>
+      </div>
+      <div class="govuk-radios__divider">or</div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="nhs-login-3" name="nhs-login" type="radio" value="unsure">
+        <label class="govuk-label govuk-radios__label" for="nhs-login-3">
+          I'm unsure
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+  <p>
+    <button type="submit" class="govuk-button" onclick="window.location.href='process-card-user-would-log-in'" >Start now</button>
+  </p>
+</div>
+
+<div class="content-divider content-divider--short"></div>
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}

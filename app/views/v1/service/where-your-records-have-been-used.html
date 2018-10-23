@@ -1,0 +1,126 @@
+{% set title = 'Find out where your health record has been used' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+{% set navigation = 'transactional-at' %}
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing a service — your <a href="#">feedback</a> will help us to improve it.') }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <h1 class="nhsuk-c-transaction-head">
+    Where your records have been used
+  </h1>
+  <ul class="audit-list-unstyled">
+    <li>
+      <strong>Your name:</strong> Person's name
+    </li>
+    <li>
+      <strong>Your NHS number:</strong> 485 777 3456
+    </li>
+  </ul>
+  <div class="a-z-list--results">
+    <div class="nhsuk-a-z-list--results-items">
+      <h2 id="1">Your records</h2>
+        <div class="nhsuk-a-z-list--results-items__box">
+          <ul>
+            <li>
+              <div class="nhsuk-a-z-list--results-items--container">
+                <h3>23rd March 2018</h3>
+
+                <ol class="audit-list-timefeed">
+                  <li>
+                    <p>Harrogate District Hospital</p>
+                  </li>
+                </ol>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="nhsuk-a-z-list--results-items--container">
+                <h3>19th January 2018</h3>
+
+                <ol class="audit-list-timefeed">
+                  <li>
+                    <p>Leeds General Infirmary</p>
+                  </li>
+                </ol>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="nhsuk-a-z-list--results-items--container">
+                <h3>2nd January 2018</h3>
+                <ol class="audit-list-timefeed">
+                  <li>
+                    <p>Harrogate District Hospital</p>
+                  </li>
+                  <li>
+                    <p>Leeds General Infirmary</p>
+                  </li>
+                </ol>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="nhsuk-a-z-list--results-items--container">
+                <h3>13th December 2017</h3>
+                <ol class="audit-list-timefeed">
+                  <li>
+                    <p>Harrogate District Hospital</p>
+                  </li>
+                  <li>
+                    <p>Leeds General Infirmary</p>
+                  </li>
+                  <li>
+                    <p>Leeds General Infirmary</p>
+                  </li>
+                  <li>
+                    <p>Leeds General Infirmary</p>
+                  </li>
+                  <li>
+                    <p>Leeds General Infirmary</p>
+                  </li>
+                </ol>
+
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+    </div>
+  </div>
+  <p>
+    <a href="#">Load more records</a>
+  </p>
+
+</div>
+
+  <h2>Search</h2>
+  <p>
+    <button type="submit" class="govuk-button" onclick="window.location.href='/v1/search/search-by-location-or-date'" >Start now</button>
+  </p>
+</div>
+
+<div class="content-divider content-divider--short"></div>
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}

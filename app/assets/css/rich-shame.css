@@ -1,0 +1,30 @@
+.govuk-button {
+    font-weight: 600;
+    font-size: 19px;
+    /* font-size: 1rem; */
+    line-height: 1.1875;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 12px 16px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #00823b;
+    -webkit-box-shadow: 0 4px 0 #00190c;
+    box-shadow: 0 4px 0 #003618;
+    width: auto;
+ }
+
+.govuk-radios__input+.govuk-radios__label::before{
+    background: white;
+    border: 2px solid currentColor;
+}
+
+.govuk-checkboxes__input+.govuk-checkboxes__label::before {
+    background: white;
+    border: 2px solid currentColor;
+}
+
+/* .govuk-input {
+    border: 1px solid #425563;
+} */
