@@ -11,35 +11,28 @@
 {% from 'components/reveals/macro.njk' import reveal %}
 {% extends "includes/templates/transaction-page.html"%}
 {% set navigation = 'transactional-at' %}
-
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
-
 {% block breadcrumb %}
-  {{ phaseBanner('New', 'We are testing a service — your <a href="#">feedback</a> will help us to improve it.') }}
+  {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
 {% endblock %}
 
 {% block content %}
-
 <div class="nhsuk-reading-width">
   <div class="nhsuk-c-promo__content">
     <h1 class="nhsuk-c-transaction-head">
       We keep track of where your Summary Care Record has been used
     </h1>
   </div>
-
   <p>
     For example, your Summary Care Record would be used by staff in accident and emergency (A&E) to check your allergies before giving you any medication.
   </p>
-
   <p>
     <button type="submit" class="govuk-button" onclick="window.location.href='b'" >Continue</button>
   </p>
 </div>
-
 <div class="content-divider content-divider--short"></div>
 {% endblock %}
-
 {% block footer %}
   {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
 {% endblock %}
