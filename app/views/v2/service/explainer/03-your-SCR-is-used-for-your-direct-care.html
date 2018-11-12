@@ -9,33 +9,28 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/transaction-page.html"%}
+{% set navigation = 'transactional-at' %}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
-
 {% block breadcrumb %}
-  {{ breadcrumbs('/', 'Home', '#', 'Your NHS data matters') }}
-{% endblock %}
-
-{% block header %}
-<div class="nhsuk-reading-width">
-  <h1>Find out where your health records have been looked at</h1>
-</div>
+  {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
 {% endblock %}
 
 {% block content %}
 <div class="nhsuk-reading-width">
+  <h1 class="nhsuk-c-transaction-head">
+    Health and care staff can look at your Summary Care Record
+  </h1>
+  <ul>
+    <li>in an emergency</li>
+    <li>at a walk-in centre</li>
+    <li>at a pharmacy</li>
+  </ul>
 
   <p>
-    Use this service to see where your Summary Care Record has been used.
-  </p>
-  <h2>Before you start</h2>
-  <p>
-    You need an NHS login to use this service. If you do not have an NHS login you’ll be able to set one up.
-  </p>
-  <p>
-    <button type="submit" class="govuk-button" onclick="window.location.href='service/prelogin/do-you-have-an-nhs-login'" >Start now</button>
+    <button type="submit" class="govuk-button" onclick="window.location.href='04-your-SCR-is-used-with-your-consent'" >Continue</button>
   </p>
 </div>
 

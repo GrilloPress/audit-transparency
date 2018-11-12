@@ -12,9 +12,7 @@
 {% extends "includes/templates/transaction-page.html"%}
 {% set navigation = 'transactional-at' %}
 
-
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
-
 
 {% block breadcrumb %}
   {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
@@ -23,21 +21,14 @@
 {% block content %}
 <div class="nhsuk-reading-width">
   <h1 class="nhsuk-c-transaction-head">
-    You have more than one health record
+    Health and care staff will ask you if they can look at your Summary Care Record
   </h1>
-
   <p>
-    There are different types of health records such as your GP record and dental record.
-  </p>
-  <p>
-    One of your health records is called a Summary Care Record.
-  </p>
-  <p>
-    Your Summary Card Record tells health and care staff some of the information form your GP record such as your medication and your allergies.
+    The only time they will not ask you if they can look at your Summary Care Record is when it's an emergency
   </p>
 
   <p>
-    <button type="submit" class="govuk-button" onclick="window.location.href='c-info-slide'" >Continue</button>
+    <button type="submit" class="govuk-button" onclick="window.location.href='05-you-can-see-where-your-Summary-Care-Record-has-been-used'" >Continue</button>
   </p>
 </div>
 

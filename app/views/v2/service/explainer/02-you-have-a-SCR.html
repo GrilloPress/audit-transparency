@@ -12,9 +12,7 @@
 {% extends "includes/templates/transaction-page.html"%}
 {% set navigation = 'transactional-at' %}
 
-
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
-
 
 {% block breadcrumb %}
   {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
@@ -23,28 +21,17 @@
 {% block content %}
 <div class="nhsuk-reading-width">
   <h1 class="nhsuk-c-transaction-head">
-    You can see where your Summary Care Record has been used
+    Your Summary Care Record comes from your GP record
   </h1>
-  <p>
-    Health and care staff can look at you Summary Care Record when your're away from your GP surgery, for example:
-  </p>
+  <p>It tells health and care staff:</p>
   <ul>
-    <li>
-      in an emergency
-    </li>
-    <li>
-      at a walk-in centre
-    </li>
-    <li>
-      at a pharmacy
-    </li>
+    <li>your allergies</li>
+    <li>your medicines</li>
+    <li>any reactions you've had to medicines</li>
   </ul>
-  <p>
-    This service lets you see where your Summary Care Record has been used.
-  </p>
 
   <p>
-    <button type="submit" class="govuk-button" onclick="window.location.href='do-you-have-an-nhs-login'" >Continue</button>
+    <button type="submit" class="govuk-button" onclick="window.location.href='03-your-SCR-is-used-for-your-direct-care'" >Continue</button>
   </p>
 </div>
 
