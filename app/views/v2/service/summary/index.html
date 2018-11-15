@@ -1,4 +1,4 @@
-{% set title = 'Find out where your health record has been used' %}
+{% set title = 'Find out where your health record has been looked at' %}
 {% set parent = 'Health A-Z' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
@@ -20,18 +20,19 @@
 {% block content %}
 <div class="nhsuk-reading-width">
   <h1 class="nhsuk-c-transaction-head nhsuk-heading-l">
-    <span class="audit-timeframe">In the last year</span> Your Summary Care Record was looked at <span class="audit-number"> 38 times </span>
+    <span class="audit-timeframe">In the last year</span> Your Summary Care Record was looked at <span class="audit-number"> 6 times </span>
   </h1>
   <h2 class="nhsuk-heading-s audit-heading--slim">In <span class="" id="">3</span> different care settings</h2>
   <ul class="audit-list-summary__list">
-   <li class="audit-list-summary__item"><span class="audit-list-summary__number">18</span> times in an NHS trust</li>
-   <li class="audit-list-summary__item"><span class="audit-list-summary__number">17</span> times in a Pharmacy</li>
-   <li class="audit-list-summary__item"><span class="audit-list-summary__number">3</span> times in a Care home</li>
+   <li class="audit-list-summary__item"><span class="audit-list-summary__number">3</span> times in an NHS trust</li>
+   <li class="audit-list-summary__item"><span class="audit-list-summary__number">2</span> times in a Care home</li>
+   <li class="audit-list-summary__item"><span class="audit-list-summary__number">1</span> time in a Pharmacy</li>
+
   </ul>
 
-  <ul class="nhsuk-list-signage nhsuk-list-signage--two-columns">
-    <li>
-      <a href="../timeline/spinner" style="width:98%;">See where your health records have been used<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+  <ul class="nhsuk-list-signage">
+    <li class="nhsuk-list-signage__item">
+      <a href="../timeline/spinner">See where your health records have been used<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
       </a>

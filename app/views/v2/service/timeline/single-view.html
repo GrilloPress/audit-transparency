@@ -1,0 +1,84 @@
+{% set title = 'Find out where your health record has been looked at' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+{% set navigation = 'transactional-at' %}
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+
+  <h1 class="nhsuk-c-transaction-head">
+    <span class="audit-heading__subtitle">Friday, 21 September 2018</span>
+    3:32pm
+  </h1>
+
+  <p>Your Summary Care Record was looked at by Leeds Teaching Hospitals NHS Trust.</p>
+
+  <h2>Address</h2>
+  <address class="">
+    <p>
+      Leeds General Infirmary <br />
+      Great George Street <br />
+      Leeds, <br />
+      West Yorkshire, <br />
+      LS1 3EX
+    </p>
+  </address>
+
+  <ul class="nhsuk-list-signage">
+    <li class="nhsuk-list-signage__item--white" style="display:none;">
+      <a href="whats-in-your-summary-care-record">What's in your Summary Care Record<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
+      </a>
+    </li>
+    <li class="nhsuk-list-signage__item--white" style="display:none;">
+      <a href="../timeline/spinner">When health and care staff look at your Summary Care Record<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
+      </a>
+    </li>
+    <li class="nhsuk-list-signage__item--white">
+      <a href="../timeline/spinner">How to find out more about this<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
+      </a>
+    </li>
+    <li class="nhsuk-list-signage__item--white">
+      <a href="../timeline/spinner">How to see where your other health records have been looked at<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
+      </a>
+    </li>
+    <li class="nhsuk-list-signage__item--white">
+      <a href="../timeline/spinner">How to see your health records<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    <a href="where-your-records-have-been-used">Go back</a>
+  </p>
+
+
+<div class="content-divider content-divider--short"></div>
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
