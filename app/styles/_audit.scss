@@ -15,6 +15,11 @@
   }
 }
 
+.audit-timeline__heading {
+
+  @extend .nhsuk-heading-m;
+}
+
 .nhsuk-a-z-list--results-items--container {
   border-bottom: 1px solid $nhsuk-border-colour;
   display: block;
@@ -32,7 +37,7 @@
 
   position: relative;
   list-style: none;
-  padding: 0 8px 16px 0;
+  padding: 0;
   clear: both;
 
     .audit-list-timefeed__single {
@@ -59,57 +64,16 @@
 
     .audit-list-timefeed__item {
 
-      &:before {
+      a {
 
-        content: "";
-        counter-increment: li;
-        position: absolute;
-        left: -4px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 2px;
-        margin-top: 8px;
-        border: 1px solid currentColor;
-        background: currentColor;
-        text-align: center;
-        padding: 4px;
-        border-radius: 50%;
-        z-index: 1000;
+        color: $nhsuk-text-colour;
+        border: none;
+        padding: 8px 0;
       }
-
-      &:after {
-
-        content: "";
-        position: absolute;
-        z-index: 2;
-        width: 0;
-        height: 50%;
-        border-left: solid 2px currentColor;
-        left: 0;
-        top: 12px;
-      }
-    }
-
-    .audit-list-timefeed__last {
 
       &:before {
 
         content: "";
-        counter-increment: li;
-        position: absolute;
-        left: -4px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 2px;
-        margin-top: 8px;
-        border: 1px solid currentColor;
-        background: currentColor;
-        text-align: center;
-        padding: 4px;
-        border-radius: 50%;
-        z-index: 1000;
       }
 
       &:after {
@@ -129,9 +93,20 @@
 
 }
 
+.audit-list-timefeed__icon {
+
+  float: right;
+  margin-top: 12px;
+}
+
 .nhsuk-a-z-list--results-items__link {
 
   text-align: center;
+}
+
+.nhsuk-a-z-list--results--headless {
+
+  margin-top: 40px;
 }
 
 
@@ -235,8 +210,62 @@
   font-weight: 300;
 }
 
+.audit-heading__subtitle {
+
+  font-weight: 300;
+  display: block;
+  font-size: 72%;
+}
+
 // yuk
 .govuk-fieldset__legend {
 
   margin-bottom: 32px !important;
+}
+
+// link list buttons
+
+li.nhsuk-list-signage__item--white {
+
+  a {
+
+    background-color: $nhsuk-white;
+    color: $nhsuk-blue;
+    border: 1px solid $nhsuk-border-colour;
+
+    &:hover, &:focus {
+
+      color: $nhsuk-link-hover-colour;
+      background-color: $nhsuk-link-hover-background-colour;
+
+    }
+
+    .nhsuk-icon {
+
+      fill: $nhsuk-blue;
+    }
+  }
+
+}
+
+.nhsuk-list-signage__item, .nhsuk-list-signage__item--white {
+
+  max-width: 98%;
+}
+
+address {
+
+  font-style: normal;
+}
+
+.nhsuk-heading-xl,
+h1 {
+  font-size: govuk-em(32px, $nhsuk-base-font-size-mobile);
+  line-height: 36px;
+  margin: 56px 0 0;
+  @include mq($from: tablet) {
+    font-size: govuk-em(36px, $nhsuk-base-font-size);
+    line-height: 48px;
+    margin: 64px 0 0;
+  }
 }
