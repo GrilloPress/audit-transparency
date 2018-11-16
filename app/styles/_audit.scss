@@ -184,15 +184,33 @@
   margin-bottom: 8px;
   display: inline-block;
   width: 45%;
-  padding: 16px 8px 8px;
   border: 1px solid $nhsuk-border-colour;
-  min-height: 114px;
-  vertical-align: middle;
   background-color: $nhsuk-white;
   @include mq($from: tablet) {
 
-    width: 32%;
-    min-height: 136px;
+    width: 28%;
+
+  }
+
+  a {
+
+    text-decoration: none;
+    color: $nhsuk-text-colour;
+    min-height: 114px;
+    padding: 16px 8px 8px;
+    vertical-align: middle;
+    display: block;
+
+    &:visited {
+
+      text-decoration: none;
+      color: $nhsuk-text-colour;
+    }
+
+    @include mq($from: tablet) {
+
+      min-height: 136px;
+    }
   }
 }
 
@@ -214,7 +232,7 @@
 
   font-weight: 300;
   display: block;
-  font-size: 72%;
+  font-size: 80%;
 }
 
 // yuk
