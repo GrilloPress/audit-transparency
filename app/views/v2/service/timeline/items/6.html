@@ -1,0 +1,64 @@
+{% set title = 'Find out where your health record has been looked at' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+{% set navigation = 'transactional-at' %}
+{% set DATESTAMP = 'Friday 19 January 2018' %}
+{% set TIME = '2:24pm' %}
+{% set LOCATION = 'Knights Pharmacy' %}
+{% set PHONE = '0113 268 1163' %}
+{% set ADDRESS = "6 Stainbeck Lane <br />
+                  Leeds <br />
+                  West Yorkshire <br />
+                  LS7 3QY"
+                  %}
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+
+  <h1 class="nhsuk-c-transaction-head">
+    <span class="audit-heading__subtitle">{{DATESTAMP}}</span>
+    {{TIME}}
+  </h1>
+
+  <p>Your Summary Care Record was looked at by {{LOCATION}}.</p>
+
+  <h2 class="nhsuk-heading-m">How to find out more</h2>
+  <p>Contact {{LOCATION}}:</p>
+  <ul>
+    <li>for more information</li>
+    <li>to make a complaint</li>
+  </ul>
+  <div role="note" aria-label="Information" class="audit-address-card">
+    <address class="">
+      <p>
+        {{ADDRESS | safe }}
+      </p>
+      <p>Telephone: {{PHONE}}</p>
+    </address>
+  </div>
+
+  <p>
+    <a href="javascript: history.go(-1)">Go back</a>
+  </p>
+
+
+<div class="content-divider content-divider--short"></div>
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
