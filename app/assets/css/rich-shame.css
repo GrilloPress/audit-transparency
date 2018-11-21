@@ -28,3 +28,17 @@
 /* .govuk-input {
     border: 1px solid #425563;
 } */
+
+.govuk-button--white {
+
+  color: #005ea5;
+  background-color: #FFF;
+  box-shadow: 0 4px 0 #004477;
+}
+
+.govuk-button--white:hover {
+
+  color: #004477;
+  background-color: #efefef;
+  box-shadow: 0 4px 0 #004477;
+}
