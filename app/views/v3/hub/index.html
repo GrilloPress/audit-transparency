@@ -1,0 +1,56 @@
+{% set title = 'The NHS in England' %}
+{% set parent = '' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends "includes/templates/hub.html"%}
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
+{% block header %}
+  <h1>Your health records</h1>
+	<div class="nhsuk-reading-width">
+		<p class="nhsuk-body-l nhsuk-page-intro">Everything you need to know about your health records.</p>
+	</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-o-grid">
+
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">What your health records are</a></h2>
+            <p>Find out about the NHS in England: its history and values, governance and regulation, and engagement with the public.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">Who your health records are shared with </a></h2>
+            <p>Find out what to expect from NHS services provided in England, including how to access them and any costs involved, if any.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">How your health records are kept secure </a></h2>
+            <p>A personal health budget could help you to manage your care in a way that suits you. Find out where to get started.</p>
+        </div>
+    </div>
+</div>
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="#">How to look at your health records </a></h2>
+            <p>Find out how the NHS provides care to the UK's armed forces community.</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="start">Find out where your health records have been looked at </a></h2>
+            <p>Have you planned your next holiday yet? Passport, visa and hotel are the obvious things to consider, but what about planning your healthcare?</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

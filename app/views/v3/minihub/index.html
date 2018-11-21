@@ -1,0 +1,142 @@
+{% set title = 'What your health records are' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/pagination/macro.njk' import pagination, paginationNext, paginationPrevious %}
+{% from 'components/review-date/macro.njk' import reviewDate %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/callout/macro.njk' import callout %}
+{% extends 'includes/site-layout.html' %}
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+{% endblock %}
+
+{% block body %}
+    <div class="nhsuk-o-width-container">
+        <main class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+				<div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+
+					<div class="nhsuk-page-heading">
+
+						<h1>What your health records are <small>Your health records</small></h1>
+
+						<aside class="nhsuk-c-page-contents v3 v4" role="complementary">
+							<nav role="navigation" aria-label="Pages in this guide">
+								<h2 class="visually-hidden">Contents</h2>
+								<ol>
+									<li class="active" aria-current="true">What your health records are</li>
+									<li><a href="who-your-health-records-are-shared-with">Who your health records are shared with</a></li>
+									<li><a href="how-your-health-records-are-kept-secure">How your health records are kept secure</a></li>
+									<li><a href="how-to-look-at-your-health-records">How to look at your health records </a></li>
+									<li><a href="/examples/minihub/living-with-amd">Living with AMD</a></li>
+								</ol>
+							</nav>
+						</aside>
+
+					</div>
+
+					<div class="nhsuk-page-content">
+            <h2>The different types of health records</h2>
+            <p>
+              You have more than one health record.
+            </p>
+            <p>
+              The different types of health records include:
+            </p>
+            <ul>
+              <li>
+                GP record
+              </li>
+              <li>
+                Hospital record
+              </li>
+              <li>
+                Dental record
+              </li>
+              <li>
+                Optician’s record
+              </li>
+              <li>
+                Sexual health record
+              </li>
+              <li>
+                Mental health record
+              </li>
+              <li>
+                Summary Care Record (short summary of your GP record)
+              </li>
+            </ul>
+            <div role="note" class="nhsuk-c-inset-text">
+              <span class="visually-hidden">Information: </span>
+              <p>You may not have all of these health records. For example, you will only have a sexual health record if you have been to a sexual health or genitourinary medicine (GUM) clinic.</p>
+            </div>
+
+            <h2>What’s in your health records</h2>
+            <p>
+              Your health records include your name, age, address and NHS number.
+            </p>
+            <p>
+              Depending on the type of health record, they also have information about you such as your:
+            </p>
+            <ul>
+              <li>
+                health conditions
+              </li>
+              <li>
+                medicine
+              </li>
+              <li>
+                allergies and past reactions to medicine
+              </li>
+              <li>
+                test results
+              </li>
+              <li>
+                hospital admissions
+              </li>
+              <li>
+                lifestyle information for example whether you smoke
+              </li>
+            </ul>
+
+            <h2>Where your health records are held</h2>
+            <p>
+              Your health records apart from your Summary Care Record are held at the place you went to for treatment. For example, your GP record is held on your GP surgery’s computer system.
+            </p>
+            <p>
+              Your Summary Care Record is held on a central NHS database.
+            </p>
+            <p>
+              A Summary Care Record is a short summary of your GP record. Health and care staff can look at your Summary Care Record when you’re away from your GP surgery, for example:
+            </p>
+            <ul>
+              <li>
+                in an emergency
+              </li>
+              <li>
+                at a walk in centre
+              </li>
+              <li>
+                at a pharmacy
+              </li>
+            </ul>
+
+            <p>
+              <a href="https://digital.nhs.uk/services/summary-care-records-scr/summary-care-records-scr-information-for-patients">Find out more about Summary Care Records</a>.
+            </p>
+
+						{{ reviewDate("12/02/2016", "01/02/2019") }}
+
+						{{ paginationNext("who-your-health-records-are-shared-with", "Who your health records are shared with")}}
+
+					</div>
+
+				</div>
+			</div>
+        </main>
+	</div>
+
+
+
+{% endblock %}
