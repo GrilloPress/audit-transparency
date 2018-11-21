@@ -278,12 +278,32 @@ address {
 
 .nhsuk-heading-xl,
 h1 {
-  font-size: govuk-em(32px, $nhsuk-base-font-size-mobile);
+  font-size: govuk-em(36px, $nhsuk-base-font-size-mobile);
   line-height: 36px;
   margin: 56px 0 0;
   @include mq($from: tablet) {
-    font-size: govuk-em(36px, $nhsuk-base-font-size);
+    font-size: govuk-em(38px, $nhsuk-base-font-size);
     line-height: 48px;
     margin: 64px 0 0;
   }
+}
+
+.audit-c-promo--interruption {
+
+  background-color: #005ea5;
+  box-shadow: 0 4px 0 0 #004477;
+  color: white;
+
+}
+
+.govuk-button--white {
+
+  color: #005ea5;
+  background-color: #005ea5;
+  box-shadow: 0 4px 0 #004477;
+}
+
+a:visited {
+
+  color: $nhsuk-blue;
 }
