@@ -1,3 +1,8 @@
+a:visited {
+
+  color: $nhsuk-blue;
+}
+
 .nhsuk-transaction-header {
 
   padding: 20px;
@@ -309,9 +314,4 @@ h1 {
   color: #005ea5;
   background-color: #005ea5;
   box-shadow: 0 4px 0 #004477;
-}
-
-a:visited {
-
-  color: $nhsuk-blue;
 }
