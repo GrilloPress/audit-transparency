@@ -1,0 +1,67 @@
+.audit-dashboard {}
+
+.audit-dashboard__heading {
+
+  &::after {
+
+    content: " ";
+    display: block;
+    border-bottom: 4px solid;
+    color: #005eb8;
+    width: 130px;
+    margin-top: 16px;
+  }
+}
+
+.audit-list-summary__list {
+
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 8px;
+
+}
+
+.audit-list-summary__item {
+
+  margin-top: 0;
+  margin-bottom: 8px;
+  display: inline-block;
+  width: 45%;
+  border: 1px solid $nhsuk-border-colour;
+  background-color: $nhsuk-white;
+  @include mq($from: tablet) {
+
+    width: 29%;
+
+  }
+
+  a {
+
+    text-decoration: none;
+    color: $nhsuk-text-colour;
+    min-height: 114px;
+    padding: 16px 8px 8px;
+    vertical-align: middle;
+    display: block;
+
+    &:visited {
+
+      text-decoration: none;
+      color: $nhsuk-text-colour;
+    }
+
+    @include mq($from: tablet) {
+
+      min-height: 136px;
+    }
+  }
+}
+
+.audit-list-summary__number {
+
+  display: block;
+  font-size: 170%;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+}
