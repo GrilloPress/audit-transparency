@@ -9,30 +9,47 @@
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
-{% extends "includes/templates/transaction-page.html"%}
-{% set navigation = 'transactional-at' %}
+{% extends "includes/templates/article-page.html"%}
+
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
 {% block breadcrumb %}
-  {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
+  {{ breadcrumbs('/', 'Home', '#', 'Your NHS data matters') }}
 {% endblock %}
 
+{% block header %}
+<div class="nhsuk-reading-width">
+  <h1>Find out where your health records have been looked at</h1>
+</div>
+{% endblock %}
 
 {% block content %}
 <div class="nhsuk-reading-width">
-  <h1>Prototype v1</h1>
-</div>
-<div class="nhsuk-reading-width">
+
   <p>
-    Initial prototype to explore the design requirements and constraints of the service.
+    Use this service to see where your Summary Care Record has been looked at.
   </p>
   <p>
-    Basic journey through screens into a summary list of records.
+    Your Summary Care Record comes from your GP record. It tells health and care staff:
   </p>
+  <ul>
+    <li>your allergies</li>
+    <li>your medicines</li>
+    <li>any reactions you've had to medicines</li>
+  </ul>
   <p>
-    Starting page and pre-screener before a quick summary of items. These items then let you drill into subsets.
+  <h2>Before you start</h2>
+  <p>
+    To use this service you'll need:
   </p>
+  <ul>
+    <li>to be 13 or older</li>
+    <li>an NHS login</li>
+  </ul>
+  <p>If you do not have an NHS login you’ll be able to set one up.</p>
   <p>
-    <button type="submit" class="govuk-button" onclick="window.location.href='start'" >Start now</button>
+    <button type="submit" class="govuk-button" onclick="window.location.href='service/prelogin/do-you-have-an-nhs-login'" >Start now</button>
   </p>
 </div>
 
