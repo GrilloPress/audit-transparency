@@ -3,6 +3,7 @@
 @import "audit/v2";
 @import "audit/v3";
 @import "audit/summary";
+@import "audit/back";
 
 .nhsuk-transaction-header {
 
@@ -247,26 +248,4 @@ h1 {
   color: #005ea5;
   background-color: #005ea5;
   box-shadow: 0 4px 0 #004477;
-}
-
-.audit-back-link {
-
-  margin-bottom: 16px;
-  margin-top: 0;
-
-  a {}
-
-  .nhsuk-icon{
-
-    margin-left: -8px;
-    float: left;
-    width: 24px;
-    height: 24px;
-    @include mq($from: tablet) {
-
-      width: 28px;
-      height: 28px;
-
-    }
-  }
 }

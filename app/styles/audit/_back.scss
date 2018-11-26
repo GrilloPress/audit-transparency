@@ -1,0 +1,24 @@
+.audit-back-link {
+
+  margin-bottom: 16px;
+  margin-top: 0;
+
+  a {
+
+    display: inline-block;
+  }
+
+  .nhsuk-icon{
+
+    margin-left: -8px;
+    float: left;
+    width: 24px;
+    height: 24px;
+    @include mq($from: tablet) {
+
+      width: 28px;
+      height: 28px;
+
+    }
+  }
+}
