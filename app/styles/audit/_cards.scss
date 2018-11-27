@@ -1,0 +1,18 @@
+.audit-c-promo {
+
+  background-color: $nhsuk-white;
+  box-shadow: 0 4px 0 0 #d8dde0;
+}
+
+.audit-c-promo-heading {
+
+  font-size: govuk-em(32px, $nhsuk-base-font-size-mobile);
+  line-height: 36px;
+  margin: 56px 0 0;
+  @include mq($from: tablet) {
+    font-size: govuk-em(36px, $nhsuk-base-font-size);
+    line-height: 48px;
+    margin: 64px 0 0;
+  }
+
+}
