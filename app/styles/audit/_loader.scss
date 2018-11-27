@@ -1,0 +1,19 @@
+.loader-container {
+
+  text-align: center;
+}
+
+.loader-container__item {
+    border: 8px solid $nhsuk-white;
+    border-top: 8px solid $nhsuk-blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2.5s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
