@@ -1,27 +1,11 @@
-.audit-dashboard {}
-
-.audit-dashboard__heading {
-
-  &::after {
-
-    content: " ";
-    display: block;
-    border-bottom: 4px solid;
-    color: #005eb8;
-    width: 130px;
-    margin-top: 16px;
-  }
-}
-
-.audit-list-summary__list {
+.audit-summary-list {
 
   padding-left: 0;
   list-style-type: none;
   margin-top: 8px;
-
 }
 
-.audit-list-summary__item {
+.audit-summary-list__item {
 
   margin-top: 0;
   margin-bottom: 8px;
@@ -57,7 +41,7 @@
   }
 }
 
-.audit-list-summary__number {
+.audit-summary-list__number {
 
   display: block;
   font-size: 170%;
