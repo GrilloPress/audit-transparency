@@ -6,6 +6,11 @@
   a {
 
     display: inline-block;
+
+    &:hover {
+
+      color: currentColor;
+    }
   }
 
   .nhsuk-icon{
