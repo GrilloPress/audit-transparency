@@ -11,6 +11,7 @@
 {% from 'components/reveals/macro.njk' import reveal %}
 {% extends "includes/templates/transaction-page.html"%}
 {% set navigation = 'transactional-at' %}
+{% set serviceName = "Find out who's looked at your health records" %}
 {% set DATESTAMP = 'Tuesday 13 March 2018' %}
 {% set TIME = '9:57am' %}
 {% set LOCATION = 'Leeds Community Healthcare NHS Trust' %}
@@ -64,7 +65,7 @@
       <p>Telephone: {{PHONE}}</p>
     </address>
   </div>
-  
+
 </div>
 <div class="content-divider content-divider--short"></div>
 {% endblock %}
