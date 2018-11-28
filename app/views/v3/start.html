@@ -10,6 +10,7 @@
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
 {% from 'components/reveals/macro.njk' import reveal %}
 {% extends "includes/templates/article-page.html"%}
+{% set serviceName = "Find out who's looked at your health records" %}
 
 <link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
 
@@ -20,7 +21,7 @@
 
 {% block header %}
 <div class="nhsuk-reading-width">
-  <h1>Find out where your health records have been looked at</h1>
+  <h1>{{serviceName}}</h1>
 </div>
 {% endblock %}
 
@@ -28,7 +29,7 @@
 <div class="nhsuk-reading-width">
 
   <p>
-    Use this service to see where your Summary Care Record has been looked at.
+    Use this service to find out who’s looked at your Summary Care Record.
   </p>
   <p>
     Your Summary Care Record comes from your GP record. It tells health and care staff:
