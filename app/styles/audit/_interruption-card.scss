@@ -3,6 +3,16 @@
   color: #005ea5;
   background-color: #005ea5;
   box-shadow: 0 4px 0 #004477;
+
+  &:hover {}
+
+  &:focus {
+
+    color: #004477;
+    background-color: #efefef;
+    box-shadow: 0 0 0 4px #ffb81c;
+
+  }
 }
 
 .audit-c-promo--interruption {
@@ -10,5 +20,15 @@
   background-color: #05538e;
   box-shadow: 0 4px 0 0 #022138;
   color: white;
+
+  // dirty hack to override the gds css
+  .govuk-button--white {
+
+    &:focus {
+
+      background-color: #efefef;
+
+    }
+  }
 
 }
