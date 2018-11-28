@@ -1,5 +1,65 @@
 .v2 {
 
+  .nhsuk-a-z-list--results-items--container {
+    display: block;
+    text-decoration: none;
+
+    h2, h3, h4, h5 {
+
+      padding: 12px 16px;
+    }
+  }
+
+  .audit-list-timefeed {
+
+    position: relative;
+    list-style: none;
+    padding: 0;
+    clear: both;
+    margin: 0;
+    border-top: 1px solid $nhsuk-border-colour;
+
+  }
+
+  .audit-list-timefeed__item {
+
+    a {
+
+      color: $nhsuk-text-colour;
+      border: none;
+      padding: 12px 16px;
+    }
+
+  }
+
+  .audit-list-timefeed__timestamp {
+
+    display: block;
+
+  }
+
+  .audit-list-timefeed__icon {
+
+    float: right;
+    margin-top: 12px;
+  }
+
+  .nhsuk-a-z-list--results-items__link {
+
+    text-align: center;
+  }
+
+  .nhsuk-a-z-list--results--headless {
+
+    margin-top: 40px;
+  }
+
+  .audit-timeframe {
+      display: block;
+      font-size: 80%;
+      font-weight: 300;
+  }
+
   .audit-list-timefeed {
 
     border-top: none;
@@ -59,5 +119,7 @@
     margin-bottom: 8px;
 
   }
+
+
 
 }
