@@ -19,8 +19,11 @@
 
 
         <div class="nhsuk-transaction-header">
-
+          {% if serviceName %}
+            <p class="nhsuk-transaction-header__title">{{serviceName}}</p>
+          {% else %}
             <p class="nhsuk-transaction-header__title">Find out where your health records have been looked at</p>
+            {% endif %}
           </div>
 
 
