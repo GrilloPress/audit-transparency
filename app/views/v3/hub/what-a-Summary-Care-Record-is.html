@@ -8,7 +8,7 @@
 {% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
-{% extends "includes/templates/article-page.html"%}
+{% extends "includes/templates/article-page--hub.html"%}
 
 {% block breadcrumb %}
 
@@ -35,9 +35,12 @@
   </ul>
   <p><a href="how-to-look-at-your-health-records#your-scr">How to look at your Summary Care Record</a></p>
 
-
 </div>
 
 <div class="content-divider content-divider--short"></div>
+
+{% endblock %}
+
+{% block sidebar %}
 
 {% endblock %}
