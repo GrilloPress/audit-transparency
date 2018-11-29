@@ -1,0 +1,43 @@
+{% set title = 'What a Summary Care Record is' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% extends "includes/templates/article-page.html"%}
+
+{% block breadcrumb %}
+
+  {{ breadcrumbs('#', 'Home', '../hub/', 'Your health records') }}
+{% endblock %}
+
+{% block header %}
+  <h1>{{title}}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <p>Your Summary Care Record comes from your GP record. It tells health and care staff:</p>
+  <ul>
+    <li>your allergies</li>
+    <li>your medicines</li>
+    <li>any reactions you've had to medicines</li>
+  </ul>
+  <p>Health and care staff might look at your Summary Care Record:</p>
+  <ul>
+    <li>in an emergency</li>
+    <li>at a walk-in centre</li>
+    <li>at a pharmacy</li>
+  </ul>
+  <p><a href="how-to-look-at-your-Summary-Care-Record">How to look at your Summary Care Record</a></p>
+
+
+</div>
+
+<div class="content-divider content-divider--short"></div>
+
+{% endblock %}

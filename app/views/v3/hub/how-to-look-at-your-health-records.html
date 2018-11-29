@@ -1,0 +1,37 @@
+{% set title = 'How to look at your health records' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% extends "includes/templates/article-page.html"%}
+
+{% block breadcrumb %}
+
+  {{ breadcrumbs('#', 'Home', '../hub/', 'Your health records') }}
+{% endblock %}
+
+{% block header %}
+  <h1>{{title}}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <h2>Your GP record and your vaccinations record </h2>
+  <p>You can look at your GP record and your vaccinations record online using GP online services. </p>
+  <p>You can ask to set up GP online services at your GP surgery. </p>
+  <h2>Your Summary Care Record </h2>
+  <p>Speak to your GP surgery to ask to look at your Summary Care Record. </p>
+  <p>Some GP online services can show you your Summary Care Record.</p>
+  <h2>How to look at someone else’s health record</h2>
+  <p><a href="https://www.nhs.uk/common-health-questions/nhs-services-and-treatments/can-i-access-someone-elses-medical-records-health-records/">Find out if you can look at someone else’s heath record.</a></p>
+
+</div>
+
+<div class="content-divider content-divider--short"></div>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% set title = 'What your health records are' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% extends "includes/templates/article-page.html"%}
+
+{% block breadcrumb %}
+
+  {{ breadcrumbs('#', 'Home', '../hub/', 'Your health records') }}
+{% endblock %}
+
+{% block header %}
+  <h1>{{title}}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <h2>The different kinds of health records</h2>
+  <p>Health services such as your GP surgery or dentist have their own health record about you.</p>
+  <p>The different kinds of health records include:</p>
+  <ul>
+    <li>GP record</li>
+    <li>Hospital record</li>
+    <li>Vaccinations record</li>
+    <li>Summary Care Record</li>
+    <li>Dental record</li>
+    <li>Optician’s record</li>
+    <li>Sexual health record</li>
+    <li>Mental health record</li>
+  </ul>
+  {{ insetText('Information:', '<p>You may not have all of these health records. For example, you will only have a sexual health record if you have been to a sexual health clinic.</p>') }}
+
+  <h2>What’s in your health records</h2>
+  <p>Your health records include your name, age and address.</p>
+  <p>Your health records also have information such as your:</p>
+  <ul>
+    <li>health conditions</li>
+    <li>medicine</li>
+    <li>allergies and past reactions to medicine</li>
+    <li>test results</li>
+    <li>hospital admissions</li>
+    <li>lifestyle information for example whether you smoke</li>
+  </ul>
+
+  <h2>Where your health records are held </h2>
+  <p>Your health records are held at the place you went to for treatment. For example, your GP record is held on your GP surgery’s computer system. </p>
+  <p>Your Summary Care Record is held on a national NHS database. <a href="what-a-Summary-Care-Record-is">Find out what a Summary Care Record is</a>.</p>
+
+</div>
+
+<div class="content-divider content-divider--short"></div>
+
+{% endblock %}

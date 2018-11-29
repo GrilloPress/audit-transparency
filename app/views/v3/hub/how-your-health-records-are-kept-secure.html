@@ -1,0 +1,41 @@
+{% set title = 'How your health records are kept secure' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% extends "includes/templates/article-page.html"%}
+
+{% block breadcrumb %}
+
+  {{ breadcrumbs('#', 'Home', '../hub/', 'Your health records') }}
+{% endblock %}
+
+{% block header %}
+  <h1>{{title}}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <h2>Removing information that identifies you before sharing your health records</h2>
+  <p>We take away information that identifies you such as your name as much as we can before your health records are used by organisations.</p>
+  <h2>Using an independent review committee to approve who you can use your health records</h2>
+  <p>Before organisations can use your health records, they must be approved by an independent group of people (an independent review committee) to check:</p>
+  <ul>
+    <li>why they need your health records</li>
+    <li>who will look at your health records</li>
+    <li>how your health records will be kept secure</li>
+  </ul>
+  <p>If organisations are approved to use your health records they will only get the information they need to know.</p>
+  <h2>By using strong IT security</h2>
+  <p>Your health records must be stored securely and protected by passwords so only the appropriate people will be able to see them.</p>
+
+</div>
+
+<div class="content-divider content-divider--short"></div>
+
+{% endblock %}

@@ -4,13 +4,28 @@
 {% extends "includes/templates/hub.html"%}
 
 {% block breadcrumb %}
-  {{ breadcrumbs('/', 'Home', '/section', 'Section') }}
+<nav class="nhsuk-c-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-o-width-container">
+    <ol class="nhsuk-c-breadcrumb__list">
+      <li class="nhsuk-c-breadcrumb__item"><a href="#" class="nhsuk-c-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-c-breadcrumb__back">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"/>
+        <image class="nhsuk-icon__chevron-left nhsuk-icon__chevron-left--fallback" src="core/assets/icons/fallback/icon-chevron-left.png" xlink:href="">
+      </svg>
+      <a href="#" class="nhsuk-c-breadcrumb__backlink">
+        Back to Home
+      </a>
+    </p>
+  </div>
+</nav>
 {% endblock %}
 
 {% block header %}
   <h1>Your health records</h1>
 	<div class="nhsuk-reading-width">
-		<p class="nhsuk-body-l nhsuk-page-intro">Everything you need to know about your health records.</p>
+		<p class="nhsuk-body-l nhsuk-page-intro">What your health records are, who they’re shared with and how to look at them.</p>
 	</div>
 {% endblock %}
 
@@ -19,20 +34,20 @@
 
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="#">What your health records are</a></h2>
-            <p>Find out about the NHS in England: its history and values, governance and regulation, and engagement with the public.</p>
+            <h2 class="nhsuk-heading-s"><a href="what-your-health-records-are">What your health records are</a></h2>
+            <p>The different types of health records and what’s in them.</p>
         </div>
     </div>
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="#">Who your health records are shared with </a></h2>
-            <p>Find out what to expect from NHS services provided in England, including how to access them and any costs involved, if any.</p>
+            <h2 class="nhsuk-heading-s"><a href="what-a-Summary-Care-Record-is">What a Summary Care Record is</a></h2>
+            <p>What a Summary Care Record is and what they’re used for.</p>
         </div>
     </div>
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="#">How your health records are kept secure </a></h2>
-            <p>A personal health budget could help you to manage your care in a way that suits you. Find out where to get started.</p>
+            <h2 class="nhsuk-heading-s"><a href="who-your-health-records-are-shared-with">Who your health records are shared with </a></h2>
+            <p>Who can and cannot look at your health records.</p>
         </div>
     </div>
 </div>
@@ -40,14 +55,29 @@
 <div class="nhsuk-o-grid">
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="#">How to look at your health records </a></h2>
-            <p>Find out how the NHS provides care to the UK's armed forces community.</p>
+            <h2 class="nhsuk-heading-s"><a href="how-your-health-records-are-kept-secure">How your health records are kept secure</a></h2>
+            <p>What we do to protect your health records.</p>
         </div>
     </div>
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
-            <h2 class="nhsuk-heading-s"><a href="start">Find out where your health records have been looked at </a></h2>
-            <p>Have you planned your next holiday yet? Passport, visa and hotel are the obvious things to consider, but what about planning your healthcare?</p>
+            <h2 class="nhsuk-heading-s"><a href="how-to-look-at-your-health-records">How to look at your health records</a></h2>
+            <p>How to look at the different kinds of health records</p>
+        </div>
+    </div>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="../start">Find out who’s looked at your health records</a></h2>
+            <p>Use this service to find out who’s looked at your Summary Care Record.</p>
+        </div>
+    </div>
+</div>
+
+<div class="nhsuk-o-grid">
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+        <div class="nhsuk-c-promo-v1">
+            <h2 class="nhsuk-heading-s"><a href="../end">Choose if your health records are used for research and planning</a></h2>
+            <p>Use this service to choose whether your confidential patient information can be used for research and planning.</p>
         </div>
     </div>
 </div>
