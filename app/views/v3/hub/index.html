@@ -1,4 +1,4 @@
-{% set title = 'The NHS in England' %}
+{% set title = 'Your health records' %}
 {% set parent = '' %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends "includes/templates/hub.html"%}
@@ -23,7 +23,7 @@
 {% endblock %}
 
 {% block header %}
-  <h1>Your health records</h1>
+  <h1>{{title}}</h1>
 	<div class="nhsuk-reading-width">
 		<p class="nhsuk-body-l nhsuk-page-intro">What your health records are, who they’re shared with and how to look at them.</p>
 	</div>
@@ -82,7 +82,7 @@
           <p>Use this service to find out who’s looked at your Summary Care Record.</p>
       </div>
   </div>
-  
+
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
         <div class="nhsuk-c-promo-v1">
             <h2 class="nhsuk-heading-s"><a href="../end">Choose if your health records are used for research and planning</a></h2>
