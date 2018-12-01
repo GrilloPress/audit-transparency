@@ -1,4 +1,4 @@
-{% set title = 'How to look at your health records' %}
+{% set title = 'Find out where your health record has been looked at' %}
 {% set parent = 'Health A-Z' %}
 {% from 'components/inset-text/macro.njk' import insetText %}
 {% from 'components/do-dont-list/macro.njk' import list %}
@@ -8,33 +8,53 @@
 {% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
 {% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
 {% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
 {% extends "includes/templates/article-page--hub.html"%}
+{% set serviceName = "Find out who's looked at your health records" %}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
 
 {% block breadcrumb %}
-
-  {{ breadcrumbs('#', 'Home', '../hub/', 'Your health records') }}
+  {{ breadcrumbs('/', 'Home', 'hub/', 'Your health records') }}
 {% endblock %}
 
 {% block header %}
-  <h1>{{title}}</h1>
+<div class="nhsuk-reading-width">
+  <h1>{{serviceName}}</h1>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="nhsuk-reading-width">
-  <h2>Your GP record and your vaccinations record</h2>
-  <p>You can look at your GP record and your vaccinations record online using GP online services. </p>
-  <p>You can ask to set up GP online services at your GP surgery. </p>
-  <p><a href="https://www.nhs.uk/using-the-nhs/nhs-services/gps/gp-online-services/">Start using GP online services.</a></p>
-  <h2 id="your-scr">Your Summary Care Record </h2>
-  <p>Speak to your GP surgery to ask to look at your Summary Care Record. </p>
-  <p>Some GP online services can show you your Summary Care Record.</p>
-  <h2>How to look at someone else’s health record</h2>
-  <p><a href="https://www.nhs.uk/common-health-questions/nhs-services-and-treatments/can-i-access-someone-elses-medical-records-health-records/">Find out if you can look at someone else’s heath record.</a></p>
 
+  <p>
+    Use this service to find out who’s looked at your Summary Care Record.
+  </p>
+  <p>
+    Your Summary Care Record comes from your GP record. It tells health and care staff:
+  </p>
+  <ul>
+    <li>your allergies</li>
+    <li>your medicines</li>
+    <li>any reactions you've had to medicines</li>
+  </ul>
+  <p>
+  <h2>Before you start</h2>
+  <p>
+    To use this service you'll need:
+  </p>
+  <ul>
+    <li>to be 16 or older</li>
+    <li>an NHS login</li>
+  </ul>
+  <p>If you do not have an NHS login you’ll be able to set one up.</p>
+  <p>
+    <button type="submit" class="govuk-button" onclick="window.location.href='../service/prelogin/do-you-have-an-nhs-login'" >Start now</button>
+  </p>
 </div>
 
 <div class="content-divider content-divider--short"></div>
-
 {% endblock %}
 
 {% block sidebar %}
@@ -49,8 +69,8 @@
       <li><a href="who-your-health-records-are-shared-with">Who your health records are shared with</a></li>
       <li><a href="what-companies-cannot-do-with-your-health-records">What companies cannot do with your health records</a></li>
       <li><a href="how-your-health-records-are-kept-secure">How your health records are kept secure</a></li>
-      <li><strong>How to look at your health records</strong></li>
-      <li><a href="start">Find out who's looked at your health records</a></li>
+      <li><a href="how-to-look-at-your-health-records">How to look at your health records</a></li>
+      <li><strong>Find out who's looked at your health records</strong></li>
       <li><a href="../end">Choose if your health records are used for research and planning</a></li>
     </ul>
 
