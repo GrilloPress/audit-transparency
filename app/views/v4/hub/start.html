@@ -1,0 +1,78 @@
+{% set title = 'Find out where your health record has been looked at' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/article-page--hub.html"%}
+{% set serviceName = "Find out who's looked at your health records" %}
+
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+
+{% block breadcrumb %}
+  {{ breadcrumbs('/', 'Home', 'hub/', 'Your health records') }}
+{% endblock %}
+
+{% block header %}
+<div class="nhsuk-reading-width">
+  <h1>{{serviceName}}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+
+  <p>
+    Use this service to find out who’s looked at your Summary Care Record.
+  </p>
+  <p>
+    Your Summary Care Record comes from your GP record. It tells health and care staff:
+  </p>
+  <ul>
+    <li>your allergies</li>
+    <li>your medicines</li>
+    <li>any reactions you've had to medicines</li>
+  </ul>
+  <p>
+  <h2>Before you start</h2>
+  <p>
+    To use this service you'll need:
+  </p>
+  <ul>
+    <li>to be 16 or older</li>
+    <li>an NHS login</li>
+  </ul>
+  <p>If you do not have an NHS login you’ll be able to set one up.</p>
+  <p>
+    <button type="submit" class="govuk-button" onclick="window.location.href='../service/prelogin/do-you-have-an-nhs-login'" >Start now</button>
+  </p>
+</div>
+
+<div class="content-divider content-divider--short"></div>
+{% endblock %}
+
+{% block sidebar %}
+  <div class="nhsuk-c-page-nav-left">
+    <h2 class="nhsuk-heading-s">
+      <a href="index">Your health records</a>
+    </h2>
+    <ul class="nhsuk-list-nav audit-list-unstyled">
+      <li><a href="index">Your health records</a></li>
+      <li><a href="what-your-health-records-are">What your health records are</a></li>
+      <li><a href="what-a-Summary-Care-Record-is">What a Summary Care Record is</a></li>
+      <li><a href="who-your-health-records-are-shared-with">Who your health records are shared with</a></li>
+      <li><a href="what-companies-cannot-do-with-your-health-records">What companies cannot do with your health records</a></li>
+      <li><a href="how-your-health-records-are-kept-secure">How your health records are kept secure</a></li>
+      <li><a href="how-to-look-at-your-health-records">How to look at your health records</a></li>
+      <li><strong>Find out who's looked at your health records</strong></li>
+      <li><a href="../end">Choose if your health records are used for research and planning</a></li>
+    </ul>
+
+  </div>
+{% endblock %}

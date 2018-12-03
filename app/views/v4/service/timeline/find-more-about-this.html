@@ -1,0 +1,46 @@
+{% set title = 'Find out where your health record has been looked at' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% from 'components/reveals/macro.njk' import reveal %}
+{% extends "includes/templates/transaction-page.html"%}
+{% set navigation = 'transactional-at' %}
+{% set serviceName = "Find out who's looked at your health records" %}
+<link href="/assets/css/gds-styles.css" rel="stylesheet" media="all" />
+
+{% block breadcrumb %}
+  {{ phaseBanner('New', 'We are testing this service — your <a href="#">feedback</a> will help us to improve it.') }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+
+  <h1 class="nhsuk-c-transaction-head">
+    Contact Leeds Teaching Hospitals NHS Trust about this time they looked at your Summary Care Record:
+  </h1>
+
+  <ul>
+    <li>for more information</li>
+    <li>to make a complaint</li>
+  </ul>
+
+  <p>Leeds Teaching Hospitals NHS Trust</p>
+  <p>Telephone: 0113 220 8500</p>
+
+  <p>
+    <a href="javascript: history.go(-1)">Go back</a>
+  </p>
+
+
+<div class="content-divider content-divider--short"></div>
+{% endblock %}
+
+{% block footer %}
+  {{ feedbackBanner('Help us make the NHS website better', 'Your feedback helps us improve the NHS website.', '#', 'Take our short survey') }}
+{% endblock %}
