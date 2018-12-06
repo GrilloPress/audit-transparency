@@ -1,0 +1,61 @@
+{% set title = 'How your health records are kept secure' %}
+{% set parent = 'Health A-Z' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% from 'components/do-dont-list/macro.njk' import list %}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'components/cookie-banner/macro.njk' import cookieBanner %}
+{% from 'components/emergency-alert/macro.njk' import emergencyAlert %}
+{% from 'components/feedback-banner/macro.njk' import feedbackBanner %}
+{% from 'components/phase-banner/macro.njk' import phaseBanner %}
+{% extends "includes/templates/article-page--hub.html"%}
+
+{% block breadcrumb %}
+
+  {{ breadcrumbs('#', 'Home', '../hub/', 'Your health records') }}
+{% endblock %}
+
+{% block header %}
+  <h1>{{title}}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-reading-width">
+  <h2>By taking away information that identifies you before we share your health records</h2>
+  <p>We take away information that identifies you such as your name as much as we can before companies use your health records.</p>
+  <h2>By using an independent review committee to approve who you can use your health records</h2>
+  <p>Before companies can use your health records, they must be approved by an independent group of people (an independent review committee) to check:</p>
+  <ul>
+    <li>why they need your health records</li>
+    <li>who will look at your health records</li>
+    <li>how your health records will be kept secure</li>
+  </ul>
+  <p>If companies are approved to use your health records they will only get the information they need to know.</p>
+  <h2>By using strong IT security</h2>
+  <p>Your health records must be stored securely and protected by passwords so only the appropriate people will be able to see them.</p>
+
+</div>
+
+<div class="content-divider content-divider--short"></div>
+
+{% endblock %}
+
+{% block sidebar %}
+  <div class="nhsuk-c-page-nav-left">
+    <h2 class="nhsuk-heading-s">
+      <a href="index">Your health records</a>
+    </h2>
+    <ul class="nhsuk-list-nav audit-list-unstyled">
+      <li><a href="index">Your health records</a></li>
+      <li><a href="what-your-health-records-are">What your health records are</a></li>
+      <li><a href="what-a-Summary-Care-Record-is">What a Summary Care Record is</a></li>
+      <li><a href="who-your-health-records-are-shared-with">Who your health records are shared with</a></li>
+      <li><a href="what-companies-cannot-do-with-your-health-records">What companies cannot do with your health records</a></li>
+      <li><strong>How your health records are kept secure</strong></li>
+      <li><a href="how-to-look-at-your-health-records">How to look at your health records</a></li>
+      <li><a href="start">Find out who's looked at your health records</a></li>
+      <li><a href="../end">Choose if your health records are used for research and planning</a></li>
+    </ul>
+
+  </div>
+{% endblock %}
